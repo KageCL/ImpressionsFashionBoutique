@@ -1,0 +1,36 @@
+:root{
+    --primary-color-1:#B886F8;
+    --primary-color-2:#BEBEBE;
+
+}
+
+#main-content{
+    display: flex;
+    flex-direction: row;
+    background: var(--primary-color-2);
+}
+
+#main-content h1{
+    text-align: center;
+}
+
+#main-content h2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#main-contact{
+    flex: 2;
+    background: var(--primary-color-2);
+}
+
+#social-media{
+    flex: 1;
+    background: var(--primary-color-1);
+}
+
+@media only screen and (max-width: 700px){
+
+    #main-content{
+        flex-direction: column;
+    }
+}  
