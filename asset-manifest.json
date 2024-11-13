@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ImpressionsFashionBoutique/static/css/main.4c335299.css",
+    "main.js": "/ImpressionsFashionBoutique/static/js/main.1429bb6e.js",
+    "static/media/beach-outfit.jpg": "/ImpressionsFashionBoutique/static/media/beach-outfit.449413e6494612ebb538.jpg",
+    "static/media/butterfly-dress.jpg": "/ImpressionsFashionBoutique/static/media/butterfly-dress.bfebfd8aabab684a926e.jpg",
+    "static/media/cool-short-legging.jpg": "/ImpressionsFashionBoutique/static/media/cool-short-legging.31bb7d15e0b367f90735.jpg",
+    "static/media/plain-short.jpg": "/ImpressionsFashionBoutique/static/media/plain-short.924c4909f75c3756ebce.jpg",
+    "static/media/flower-skort.jpg": "/ImpressionsFashionBoutique/static/media/flower-skort.62614fa4a58a275f1859.jpg",
+    "static/media/lion-legging.jpg": "/ImpressionsFashionBoutique/static/media/lion-legging.f33525d74caca89c70e8.jpg",
+    "static/media/site-logo2.png": "/ImpressionsFashionBoutique/static/media/site-logo2.17f00108237d0dc29a58.png",
+    "index.html": "/ImpressionsFashionBoutique/index.html",
+    "main.4c335299.css.map": "/ImpressionsFashionBoutique/static/css/main.4c335299.css.map",
+    "main.1429bb6e.js.map": "/ImpressionsFashionBoutique/static/js/main.1429bb6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c335299.css",
+    "static/js/main.1429bb6e.js"
+  ]
+}
