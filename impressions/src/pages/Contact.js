@@ -1,5 +1,5 @@
 import "../css/Contact.css"; 
-
+import ContactForm from "../components/ContactForm";
 const Contact = () => {
     return (
         <>
@@ -15,6 +15,7 @@ const Contact = () => {
                 <h2>Deliver is possible for locations in or around Sumter. Appointments must me made.</h2>
                 <h2>Deilver fees included.</h2>
 
+                <ContactForm/>
            </div>
            <div id="social-media">
                 <h1>Social Media</h1>

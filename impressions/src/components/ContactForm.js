@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function ContactForm() {
     const [result, setResult] = React.useState("");
   
     const onSubmit = async (event) => {
