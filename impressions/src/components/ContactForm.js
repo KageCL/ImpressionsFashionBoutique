@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../css/ContactForm.css";
 export default function ContactForm() {
     const [result, setResult] = React.useState("");
   
