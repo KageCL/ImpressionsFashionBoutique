@@ -27,7 +27,7 @@ export default function ContactForm() {
     };
   
     return (
-      <div>
+      <div id='form-area'>
         
         <h1>Contact Form</h1>
         <h2>Include questions such as shipping, pricing and event questions.</h2>
