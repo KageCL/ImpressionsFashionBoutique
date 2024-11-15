@@ -1,4 +1,5 @@
 import Item from "../components/Item.js";
+import AddDialog from "../components/add-dialog.js";
 import "../css/Clothing.css";
 import axios from "axios";
 
@@ -6,6 +7,7 @@ import React, {useState, useEffect} from "react";
 const Dresses = () => {
 
     const [dresses, setDresses] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     useEffect(() =>{
         (async () => {
@@ -17,8 +19,25 @@ const Dresses = () => {
             setDresses(response.data.dresses);
           })();
     }, []);
+
+    const addDress = (dress) =>{
+        setDresses((dresses) => [...dresses, dress]);
+    };
+    const openAddDialog = () =>{
+        setShowAddDialog(true);
+    };
+
+    const closeAddDialog = () =>{
+        setShowAddDialog(false);
+    };
+
     return (
         <>
+
+            <button id="add-dress" onClick={openAddDialog}>+</button>
+
+            {showAddDialog ? <AddDialog closeDialog={closeAddDialog} addDress={addDress}/>:""}
+            
 
             <h3 className="label">Dresses: </h3>
             <section id="item-area">
