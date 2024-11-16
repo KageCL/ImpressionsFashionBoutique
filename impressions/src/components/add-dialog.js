@@ -33,11 +33,13 @@ const AddDialog = (props) => {
   
     if (response.status === 200) {
       setResult("Dress successfully added!");
+      console.log("Dress successfully added!")
       props.addDress(await response.json());
       event.target.reset();
       props.closeDialog();
     } else {
       setResult("Error adding dress");
+      console.log("Error adding dress");
     }
   };
   
