@@ -20,24 +20,27 @@ const AddDialog = (props) => {
   const addToServer = async(event) => {
     event.preventDefault();
     setResult("Sending....");
-
+  
     const formData = new FormData(event.target);
-    console.log(...formData);
-
-    const response = await fetch("https://impressions-backend.onrender.com/api/dresses",{
-      method:"POST",
-      body:formData
+    for (let [key, value] of formData.entries()) {
+      console.log(key, value);
+    }
+  
+    const response = await fetch("https://impressions-backend.onrender.com/api/dresses", {
+      method: "POST",
+      body: formData
     });
-
-    if(response.status == 200){
-      setResult("House Plan successfully added!");
+  
+    if (response.status === 200) {
+      setResult("Dress successfully added!");
       props.addDress(await response.json());
       event.target.reset();
       props.closeDialog();
     } else {
-      setResult("Error adding house");
+      setResult("Error adding dress");
     }
   };
+  
 
 
   return (
