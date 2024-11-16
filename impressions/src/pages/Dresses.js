@@ -16,7 +16,7 @@ const Dresses = () => {
             );
 
             console.log(response.data);
-            setDresses(response.data.dresses);
+            setDresses(response.data);
           })();
     }, []);
 
