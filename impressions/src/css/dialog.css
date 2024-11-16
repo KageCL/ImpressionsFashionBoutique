@@ -1,3 +1,7 @@
 #add-dialog{
     display: block;
 }
+
+#add-property-form{
+    margin-bottom: 30px;
+}
