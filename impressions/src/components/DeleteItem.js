@@ -5,7 +5,7 @@ const DeleteItem = (item) => {
   const [result, setResult] = useState("");
 
   const deleteItem = async() => {
-    const response = await fetch(`http://localhost:3001/api/items/${item._id}`, {
+    const response = await fetch(`https://impressions-backend.onrender.com/api/dresses/${item._id}`, {
 
       method: "DELETE"
     });
