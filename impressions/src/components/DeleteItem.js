@@ -6,6 +6,7 @@ const DeleteItem = (item) => {
 
   const deleteItem = async() => {
     const response = await fetch(`http://localhost:3001/api/items/${item._id}`, {
+
       method: "DELETE"
     });
 
@@ -16,6 +17,8 @@ const DeleteItem = (item) => {
     } else {
       setResult("Sorry, we couldn't delete your item at this time.");
     }
+
+    console.log(response);
   };
 
   return (
@@ -33,7 +36,7 @@ const DeleteItem = (item) => {
             <h3>Are you sure you want to delete the {item.name}?</h3>
             <section>
               <button onClick={item.closeDialog}>No</button>            
-              <button onClick={deleteItem}>Yes</button>
+              <button onClick={DeleteItem}>Yes</button>
             </section>
             <span>{result}</span>
           </div>
