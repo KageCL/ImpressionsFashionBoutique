@@ -18,7 +18,7 @@ const DeleteItem = (item) => {
       setResult("Sorry, we couldn't delete your item at this time.");
     }
 
-    console.log(response);
+     console.log(response);
   };
 
   return (
@@ -36,7 +36,7 @@ const DeleteItem = (item) => {
             <h3>Are you sure you want to delete the {item.name}?</h3>
             <section>
               <button onClick={item.closeDialog}>No</button>            
-              <button onClick={DeleteItem}>Yes</button>
+              <button onClick={deleteItem}>Yes</button>
             </section>
             <span>{result}</span>
           </div>
