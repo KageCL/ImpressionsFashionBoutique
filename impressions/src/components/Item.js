@@ -3,11 +3,11 @@ import { Outlet, NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import EditItem from "./EditItem";
 import DeleteItem from "./DeleteItem";
-const Item = (item) => {
+const Item = (props) => {
 
     const [showEditDialog, setShowEditDialog] = useState(false);
     const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-    const [Item, setItem] = useState(item);
+    const [Item, setItem] = useState(props);
     const [showItem, setShowItem] = useState(true);
 
   const openEditDialog = () => {
@@ -39,15 +39,15 @@ const Item = (item) => {
         <>
 
         {showItem ? (
-            <section className={item.type}>
+            <section className={Item.type}>
 
 
             {showDeleteDialog ? (
             <DeleteItem
               closeDialog={closeDeleteDialog}
               hideItem = {hideItem}
-              name={item.name}
-              _id = {item._id}
+              name={Item.name}
+              _id={Item._id}
               
             />
           ) : ("")}
@@ -56,9 +56,9 @@ const Item = (item) => {
             <EditItem
               closeDialog={closeEditDialog}
               updateItem = {editItem}
-              _id = {item._id}
-              name = {item.name}
-              description = {item.description}
+              _id = {Item._id}
+              name = {Item.name}
+              description = {Item.description}
               
             />
           ) : ("")}
@@ -71,9 +71,9 @@ const Item = (item) => {
                         &#x2715;
                     </a>
                 </section>
-                <h3 className="item-name"><NavLink to={item.link}>{item.name}</NavLink></h3>
-                <img className="item-pic" src={item.image} alt={item.name} />
-                <p className="item-desc">{item.desc}</p>
+                <h3 className="item-name"><NavLink to={Item.link}>{Item.name}</NavLink></h3>
+                <img className="item-pic" src={Item.image} alt={Item.name} />
+                <p className="item-desc">{Item.desc}</p>
             </section>
         ) : ("")}
         </>

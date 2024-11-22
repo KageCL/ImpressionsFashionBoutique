@@ -1,10 +1,12 @@
-import "../css/Dialog.css";
+import "../css/dialog.css";
 import React, { useState } from "react";
 
 const DeleteItem = (item) => {
   const [result, setResult] = useState("");
 
   const deleteItem = async() => {
+
+    console.log(item);
     const response = await fetch(`https://impressions-backend.onrender.com/api/dresses/${item._id}`, {
 
       method: "DELETE"

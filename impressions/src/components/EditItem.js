@@ -1,4 +1,4 @@
-import "../css/Dialog.css";
+import "../css/dialog.css";
 import React, { useState } from "react";
 
 const EditItem = (props) => {
