@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ImpressionsFashionBoutique/static/css/main.e218cdb0.css",
-    "main.js": "/ImpressionsFashionBoutique/static/js/main.1cf51f6e.js",
+    "main.js": "/ImpressionsFashionBoutique/static/js/main.fcdc6e87.js",
     "static/media/beach-outfit.jpg": "/ImpressionsFashionBoutique/static/media/beach-outfit.449413e6494612ebb538.jpg",
     "static/media/butterfly-dress.jpg": "/ImpressionsFashionBoutique/static/media/butterfly-dress.bfebfd8aabab684a926e.jpg",
     "static/media/cool-short-legging.jpg": "/ImpressionsFashionBoutique/static/media/cool-short-legging.31bb7d15e0b367f90735.jpg",
@@ -11,10 +11,10 @@
     "static/media/site-logo2.png": "/ImpressionsFashionBoutique/static/media/site-logo2.17f00108237d0dc29a58.png",
     "index.html": "/ImpressionsFashionBoutique/index.html",
     "main.e218cdb0.css.map": "/ImpressionsFashionBoutique/static/css/main.e218cdb0.css.map",
-    "main.1cf51f6e.js.map": "/ImpressionsFashionBoutique/static/js/main.1cf51f6e.js.map"
+    "main.fcdc6e87.js.map": "/ImpressionsFashionBoutique/static/js/main.fcdc6e87.js.map"
   },
   "entrypoints": [
     "static/css/main.e218cdb0.css",
-    "static/js/main.1cf51f6e.js"
+    "static/js/main.fcdc6e87.js"
   ]
 }
