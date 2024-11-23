@@ -16,6 +16,8 @@
 
 #change-buttons{
     background-color: #B886F8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #change-buttons a{
@@ -32,8 +34,6 @@
 .item-name{
     text-align: center;
     border-bottom: 1px solid black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     background-color: #B886F8;
     margin: 0px;
     padding: 5px;
