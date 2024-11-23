@@ -64,7 +64,7 @@ const Item = (props) => {
                     </a>
                 </section>
                 <h3 className="item-name"><NavLink to={Item.link}>{Item.name}</NavLink></h3>
-                <img className="item-pic" src={"https://impressions-backend.onrender.com/" + Item.image} alt={Item.name} />
+                <img className="item-pic" src={`https://impressions-backend.onrender.com/${Item.image}`} alt={Item.name} />
                 <p className="item-desc">{Item.desc}</p>
             </section>
         ) : ("")}
