@@ -42,7 +42,7 @@ const Dresses = () => {
             <h3 className="label">Dresses: </h3>
             <section id="item-area">
                 {dresses.map((dress) => {
-                   return <Item type="item" name={dress.name} link="/ClothingItem" image={`https://impressions-backend.onrender.com/${dress.image}`} desc={dress.description}/>;
+                   return <Item type="item" _id={dress._id} name={dress.name} link="/ClothingItem" image={`https://impressions-backend.onrender.com/${dress.image}`} desc={dress.description}/>;
                 })}
             </section>
         </>

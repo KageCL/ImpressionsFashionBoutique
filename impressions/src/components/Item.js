@@ -26,14 +26,15 @@ const Item = (props) => {
     setShowDeleteDialog(false);
   };
 
-  const hideItem = () => {
+  const hideItem = (Item) => {
     setShowItem(false);
   }
 
-  const editItem = (newItem) => {
-    setItem(newItem);
+  const editItem = (Item) => {
+    setItem(Item);
   };  
     
+  console.log("Item ID:", props._id);
     return (
 
         <>
@@ -42,16 +43,7 @@ const Item = (props) => {
             <section className={Item.type}>
 
 
-            {showDeleteDialog ? (
-            <DeleteItem
-              closeDialog={closeDeleteDialog}
-              hideItem = {hideItem}
-              name={Item.name}
-              _id={Item._id}
-              
-            />
-          ) : ("")}
-
+            {showDeleteDialog ? <DeleteItem closeDialog={closeDeleteDialog} name={Item.name} _id={Item._id} hideItem={hideItem} /> : ""}
             {showEditDialog ? (
             <EditItem
               closeDialog={closeEditDialog}
