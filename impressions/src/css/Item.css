@@ -14,6 +14,13 @@
     width: fit-content;
 }
 
+#change-buttons{
+    background-color: #B886F8;
+}
+
+#change-buttons a{
+    margin-right: 5px;
+}
 .item-pic{
     display: block;
     width: 200px;
