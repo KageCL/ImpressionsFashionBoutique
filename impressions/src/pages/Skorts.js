@@ -22,7 +22,7 @@ const Skorts = () => {
             <h3 className="label">Skorts: </h3>
             <section id="item-area">
                 {skorts.map((skort) => {
-                   return <Item type="item" name={skort.name} link="/ClothingItem" image={`https://impressions-backend.onrender.com/${skort.image}`} desc={skort.description}/>;
+                   return <Item type="item" name={skort.name} link="/ClothingItem" image={skort.image} desc={skort.description}/>;
                 })}
             </section>
         </>

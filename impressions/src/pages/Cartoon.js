@@ -40,21 +40,21 @@ const Cartoon = () => {
             <h3 className="label">Inside Out: </h3>
             <section id="item-area">
                 {inside.map((inside) => {
-                   return <Item type="item" name={inside.name} link="/KeychainItem" image={`https://impressions-backend.onrender.com/${inside.image}`} desc={inside.description}/>;
+                   return <Item type="item" name={inside.name} link="/KeychainItem" image={inside.image} desc={inside.description}/>;
                 })}
             </section>
 
             <h3 className="label">TMNT: </h3>
             <section id="item-area">
                 {turtle.map((turtle) => {
-                   return <Item type="item" name={turtle.name} link="/KeychainItem" image={`https://impressions-backend.onrender.com/${turtle.image}`} desc={turtle.description}/>;
+                   return <Item type="item" name={turtle.name} link="/KeychainItem" image={turtle.image} desc={turtle.description}/>;
                 })}
             </section>
 
             <h3 className="label">Powerpuff Girls: </h3>
             <section id="item-area">
                 {powerpuff.map((powerpuff) => {
-                   return <Item type="item" name={powerpuff.name} link="/KeychainItem" image={`https://impressions-backend.onrender.com/${powerpuff.image}`} desc={powerpuff.description}/>;
+                   return <Item type="item" name={powerpuff.name} link="/KeychainItem" image={powerpuff.image} desc={powerpuff.description}/>;
                 })}
             </section>
         </>

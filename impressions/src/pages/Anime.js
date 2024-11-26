@@ -38,21 +38,21 @@ const Anime = () => {
             <h3 className="label">Dragon Ball: </h3>
             <section id="item-area">
                 {dragon.map((dragon) => {
-                   return <Item type="item" name={dragon.name} link="/KeychainItem" image={`https://impressions-backend.onrender.com/${dragon.image}`} desc={dragon.description}/>;
+                   return <Item type="item" name={dragon.name} link="/KeychainItem" image={dragon.image} desc={dragon.description}/>;
                 })}
             </section>
 
             <h3 className="label">Naruto: </h3>
             <section id="item-area">
                 {naruto.map((naruto) => {
-                   return <Item type="item" name={naruto.name} link="/KeychainItem" image={`https://impressions-backend.onrender.com/${naruto.image}`} desc={naruto.description}/>;
+                   return <Item type="item" name={naruto.name} link="/KeychainItem" image={naruto.image} desc={naruto.description}/>;
                 })}
             </section>
 
             <h3 className="label">Jujutsu Kaisen: </h3>
             <section id="item-area">
                 {jujutsu.map((jujutsu) => {
-                   return <Item type="item" name={jujutsu.name} link="/KeychainItem" image={`https://impressions-backend.onrender.com/${jujutsu.image}`} desc={jujutsu.description}/>;
+                   return <Item type="item" name={jujutsu.name} link="/KeychainItem" image={jujutsu.image} desc={jujutsu.description}/>;
                 })}
             </section>
         </>

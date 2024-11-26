@@ -22,7 +22,7 @@ const Rompers = () => {
             <h3 className="label">Rompers: </h3>
             <section id="item-area">
                 {rompers.map((romper) => {
-                   return <Item type="item" name={romper.name} link="/ClothingItem" image={`https://impressions-backend.onrender.com/${romper.image}`} desc={romper.description}/>;
+                   return <Item type="item" name={romper.name} link="/ClothingItem" image={romper.image} desc={romper.description}/>;
                 })}
             </section>
         </>

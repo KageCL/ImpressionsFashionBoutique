@@ -22,7 +22,7 @@ const Shorts = () => {
             <h3 className="label">Shorts: </h3>
             <section id="item-area">
                 {shorts.map((short) => {
-                   return <Item type="item" name={short.name} link="/ClothingItem" image={`https://impressions-backend.onrender.com/${short.image}`} desc={short.description}/>;
+                   return <Item type="item" name={short.name} link="/ClothingItem" image={short.image} desc={short.description}/>;
                 })}
             </section>
         </>

@@ -23,7 +23,7 @@ const Outfits = () => {
             <h3 className="label">Outfits: </h3>
             <section id="item-area">
                 {outfits.map((outfit) => {
-                   return <Item type="item" name={outfit.name} link="/ClothingItem" image={`https://impressions-backend.onrender.com/${outfit.image}`} desc={outfit.description}/>;
+                   return <Item type="item" name={outfit.name} link="/ClothingItem" image={outfit.image} desc={outfit.description}/>;
                 })}
             </section>
         </>
