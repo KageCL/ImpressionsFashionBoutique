@@ -12,6 +12,7 @@
     margin: 20px;
     flex: 25%;
     width: fit-content;
+    height: min-content;
 }
 
 #change-buttons{
