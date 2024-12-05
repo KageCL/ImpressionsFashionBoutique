@@ -36,7 +36,7 @@ const EditItem = (props) => {
     if(response.status === 200){
       setResult("Item successfully updated");
       event.target.reset();
-      props.addDress(await response.json());
+      props.updateItem(await response.json());
       props.closeDialog();
     } else {
       setResult("Error editing your item. We're sorry");
